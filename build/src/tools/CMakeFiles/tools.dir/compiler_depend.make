@@ -58,8 +58,8 @@ src/tools/CMakeFiles/tools.dir/tools.c.o: ../src/tools/tools.c \
 
 src/tools/CMakeFiles/tools.dir/tools_test.c.o: ../src/tools/tools_test.c \
   /usr/include/stdc-predef.h \
-  ../Unity/unity.h \
-  ../Unity/unity_internals.h \
+  ../Unity/src/unity.h \
+  ../Unity/src/unity_internals.h \
   /usr/include/setjmp.h \
   /usr/include/features.h \
   /usr/include/features-time64.h \
@@ -135,13 +135,9 @@ src/tools/CMakeFiles/tools.dir/tools_test.c.o: ../src/tools/tools_test.c \
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
 /usr/include/math.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -215,11 +211,19 @@ src/tools/CMakeFiles/tools.dir/tools_test.c.o: ../src/tools/tools_test.c \
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+../Unity/src/unity.h:
+
 ../src/tools/tools.c:
 
 /usr/include/limits.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/stdlib.h:
+
+../Unity/src/unity_internals.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -234,6 +238,8 @@ src/tools/CMakeFiles/tools.dir/tools_test.c.o: ../src/tools/tools_test.c \
 /usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 ../src/tools/tools_test.c:
 
@@ -255,10 +261,6 @@ src/tools/CMakeFiles/tools.dir/tools_test.c.o: ../src/tools/tools_test.c \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-../Unity/unity.h:
-
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
@@ -274,5 +276,3 @@ src/tools/CMakeFiles/tools.dir/tools_test.c.o: ../src/tools/tools_test.c \
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-../Unity/unity_internals.h:

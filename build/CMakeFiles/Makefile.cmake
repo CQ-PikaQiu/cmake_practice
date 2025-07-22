@@ -15,20 +15,24 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../src/algorithm/CMakeLists.txt"
   "../src/common/CMakeLists.txt"
   "../src/tools/CMakeLists.txt"
+  "/usr/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
+  "/usr/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/GNU.cmake"
+  "/usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -44,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/algorithm/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/common/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/tools/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Unity/unityConfigVersion.cmake"
   "Unity/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -53,5 +58,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/algorithm/CMakeFiles/algorithm.dir/DependInfo.cmake"
   "src/common/CMakeFiles/common.dir/DependInfo.cmake"
   "src/tools/CMakeFiles/tools.dir/DependInfo.cmake"
-  "Unity/CMakeFiles/Unity.dir/DependInfo.cmake"
+  "Unity/CMakeFiles/unity.dir/DependInfo.cmake"
   )

@@ -16,7 +16,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/qyl/Desktop/code/build/src/algorithm/CMakeFiles/algorithm.dir/DependInfo.cmake"
   "/home/qyl/Desktop/code/build/src/common/CMakeFiles/common.dir/DependInfo.cmake"
   "/home/qyl/Desktop/code/build/src/tools/CMakeFiles/tools.dir/DependInfo.cmake"
-  "/home/qyl/Desktop/code/build/Unity/CMakeFiles/Unity.dir/DependInfo.cmake"
+  "/home/qyl/Desktop/code/build/Unity/CMakeFiles/unity.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -95,7 +95,7 @@ src/my_project: src/CMakeFiles/my_project.dir/build.make
 src/my_project: src/algorithm/libalgorithm.a
 src/my_project: src/common/libcommon.a
 src/my_project: src/tools/libtools.a
-src/my_project: Unity/libUnity.a
+src/my_project: Unity/libunity.a
 src/my_project: src/CMakeFiles/my_project.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qyl/Desktop/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable my_project"
 	cd /home/qyl/Desktop/code/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_project.dir/link.txt --verbose=$(VERBOSE)

@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"library\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /home/qyl/Desktop/code/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/qyl/Desktop/code/build/CMakeFiles /home/qyl/Desktop/code/build/Unity//CMakeFiles/progress.marks
@@ -117,42 +162,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Unity/CMakeFiles/Unity.dir/rule:
-	cd /home/qyl/Desktop/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Unity/CMakeFiles/Unity.dir/rule
-.PHONY : Unity/CMakeFiles/Unity.dir/rule
+Unity/CMakeFiles/unity.dir/rule:
+	cd /home/qyl/Desktop/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Unity/CMakeFiles/unity.dir/rule
+.PHONY : Unity/CMakeFiles/unity.dir/rule
 
 # Convenience name for target.
-Unity: Unity/CMakeFiles/Unity.dir/rule
-.PHONY : Unity
+unity: Unity/CMakeFiles/unity.dir/rule
+.PHONY : unity
 
 # fast build rule for target.
-Unity/fast:
-	cd /home/qyl/Desktop/code/build && $(MAKE) $(MAKESILENT) -f Unity/CMakeFiles/Unity.dir/build.make Unity/CMakeFiles/Unity.dir/build
-.PHONY : Unity/fast
+unity/fast:
+	cd /home/qyl/Desktop/code/build && $(MAKE) $(MAKESILENT) -f Unity/CMakeFiles/unity.dir/build.make Unity/CMakeFiles/unity.dir/build
+.PHONY : unity/fast
 
-unity.o: unity.c.o
-.PHONY : unity.o
+src/unity.o: src/unity.c.o
+.PHONY : src/unity.o
 
 # target to build an object file
-unity.c.o:
-	cd /home/qyl/Desktop/code/build && $(MAKE) $(MAKESILENT) -f Unity/CMakeFiles/Unity.dir/build.make Unity/CMakeFiles/Unity.dir/unity.c.o
-.PHONY : unity.c.o
+src/unity.c.o:
+	cd /home/qyl/Desktop/code/build && $(MAKE) $(MAKESILENT) -f Unity/CMakeFiles/unity.dir/build.make Unity/CMakeFiles/unity.dir/src/unity.c.o
+.PHONY : src/unity.c.o
 
-unity.i: unity.c.i
-.PHONY : unity.i
+src/unity.i: src/unity.c.i
+.PHONY : src/unity.i
 
 # target to preprocess a source file
-unity.c.i:
-	cd /home/qyl/Desktop/code/build && $(MAKE) $(MAKESILENT) -f Unity/CMakeFiles/Unity.dir/build.make Unity/CMakeFiles/Unity.dir/unity.c.i
-.PHONY : unity.c.i
+src/unity.c.i:
+	cd /home/qyl/Desktop/code/build && $(MAKE) $(MAKESILENT) -f Unity/CMakeFiles/unity.dir/build.make Unity/CMakeFiles/unity.dir/src/unity.c.i
+.PHONY : src/unity.c.i
 
-unity.s: unity.c.s
-.PHONY : unity.s
+src/unity.s: src/unity.c.s
+.PHONY : src/unity.s
 
 # target to generate assembly for a file
-unity.c.s:
-	cd /home/qyl/Desktop/code/build && $(MAKE) $(MAKESILENT) -f Unity/CMakeFiles/Unity.dir/build.make Unity/CMakeFiles/Unity.dir/unity.c.s
-.PHONY : unity.c.s
+src/unity.c.s:
+	cd /home/qyl/Desktop/code/build && $(MAKE) $(MAKESILENT) -f Unity/CMakeFiles/unity.dir/build.make Unity/CMakeFiles/unity.dir/src/unity.c.s
+.PHONY : src/unity.c.s
 
 # Help Target
 help:
@@ -161,11 +206,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Unity"
-	@echo "... unity.o"
-	@echo "... unity.i"
-	@echo "... unity.s"
+	@echo "... unity"
+	@echo "... src/unity.o"
+	@echo "... src/unity.i"
+	@echo "... src/unity.s"
 .PHONY : help
 
 

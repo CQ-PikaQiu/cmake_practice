@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/qyl/Desktop/code/src/tools/$(CMAKE_CURRENT_SOURCE_DIR) -I/home/qyl/Desktop/code/Unity
+C_INCLUDES = -I/home/qyl/Desktop/code/src/tools/$(CMAKE_CURRENT_SOURCE_DIR) -I/home/qyl/Desktop/code/src/tools/../../Unity/src -I/home/qyl/Desktop/code/Unity/src -I/home/qyl/Desktop/code/build/Unity
 
 C_FLAGS = 
 

@@ -1,7 +1,7 @@
 #include "algorithm/algorithm.h"
 #include "common/files_manage.h"
 #include "tools/tools.h"
-#include "../Unity/unity.h"
+#include "unity.h"
 
 void test_(void)
 {

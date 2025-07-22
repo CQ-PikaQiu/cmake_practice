@@ -7,8 +7,8 @@ src/CMakeFiles/my_project.dir/main.c.o
  /home/qyl/Desktop/code/src/algorithm/algorithm.h
  /home/qyl/Desktop/code/src/common/files_manage.h
  /home/qyl/Desktop/code/src/tools/tools.h
- /home/qyl/Desktop/code/Unity/unity.h
- /home/qyl/Desktop/code/Unity/unity_internals.h
+ /home/qyl/Desktop/code/Unity/src/unity.h
+ /home/qyl/Desktop/code/Unity/src/unity_internals.h
  /usr/include/setjmp.h
  /usr/include/features.h
  /usr/include/features-time64.h

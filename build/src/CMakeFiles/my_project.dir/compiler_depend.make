@@ -6,8 +6,8 @@ src/CMakeFiles/my_project.dir/main.c.o: ../src/main.c \
   ../src/algorithm/algorithm.h \
   ../src/common/files_manage.h \
   ../src/tools/tools.h \
-  ../Unity/unity.h \
-  ../Unity/unity_internals.h \
+  ../Unity/src/unity.h \
+  ../Unity/src/unity_internals.h \
   /usr/include/setjmp.h \
   /usr/include/features.h \
   /usr/include/features-time64.h \
@@ -82,8 +82,6 @@ src/CMakeFiles/my_project.dir/main.c.o: ../src/main.c \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
@@ -96,7 +94,23 @@ src/CMakeFiles/my_project.dir/main.c.o: ../src/main.c \
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/features.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+../Unity/src/unity_internals.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h:
 
@@ -116,22 +130,6 @@ src/CMakeFiles/my_project.dir/main.c.o: ../src/main.c \
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/features.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-../Unity/unity_internals.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/features-time64.h:
@@ -142,11 +140,11 @@ src/CMakeFiles/my_project.dir/main.c.o: ../src/main.c \
 
 ../src/common/files_manage.h:
 
+../Unity/src/unity.h:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 ../src/algorithm/algorithm.h:
-
-../Unity/unity.h:
 
 ../src/main.c:
 
@@ -173,3 +171,5 @@ src/CMakeFiles/my_project.dir/main.c.o: ../src/main.c \
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:

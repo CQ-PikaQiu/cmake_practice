@@ -60,8 +60,8 @@ src/tools/CMakeFiles/tools.dir/tools.c.o
 src/tools/CMakeFiles/tools.dir/tools_test.c.o
  /home/qyl/Desktop/code/src/tools/tools_test.c
  /usr/include/stdc-predef.h
- /home/qyl/Desktop/code/Unity/unity.h
- /home/qyl/Desktop/code/Unity/unity_internals.h
+ /home/qyl/Desktop/code/Unity/src/unity.h
+ /home/qyl/Desktop/code/Unity/src/unity_internals.h
  /usr/include/setjmp.h
  /usr/include/features.h
  /usr/include/features-time64.h

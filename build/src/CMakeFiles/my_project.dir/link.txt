@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/my_project.dir/main.c.o -o my_project  algorithm/libalgorithm.a common/libcommon.a tools/libtools.a ../Unity/libUnity.a 
+/usr/bin/cc CMakeFiles/my_project.dir/main.c.o -o my_project  algorithm/libalgorithm.a common/libcommon.a tools/libtools.a ../Unity/libunity.a 

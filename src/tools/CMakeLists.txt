@@ -5,4 +5,8 @@ target_include_directories(tools
     $(CMAKE_CURRENT_SOURCE_DIR)
 )
 
-target_link_libraries(tools Unity)
+target_include_directories(tools PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Unity/src/
+)
+
+target_link_libraries(tools unity)
